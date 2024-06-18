@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Product Landing Page</title>
+</head>
+
+<body>
+    <header id="header">
+        <img src="./Assets/Logo2.png" id="header-img" class="brand-logo"/>
+        <nav id="nav-bar">
+            <div class="menu-toggle" id="mobile-menu">
+                <hr class="bar">
+                <hr class="bar">
+                <hr class="bar">
+            </div>
+            <ul class="nav-list">
+                <li><a href="#About" class="nav-link">About</a></li>
+                <li><a href="#Features" class="nav-link">Features</a></li>
+                <li><a href="#Testimonial" class="nav-link">Testimonial</a></li>
+                <li><a href="#Contact" class="contact-button">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="orange">Studying Maths is now much easier</h1>
+            <p>Math Champs is an interesting platform that will teach you in a more funnest way</p>
+            <div class="hero-buttons">
+                <button class="btn trial-btn">Take Trial Class</button>
+                <button class="btn watch-btn">Watch how it works</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <!--<img src="./Assets/girl.png" alt="Hero Image">-->
+            <div class="hero-animation">
+                <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+                <dotlottie-player src="https://lottie.host/86c79239-912a-4a89-aa74-ef1e4c56fb21/XtADgjd7T3.json" background="transparent" speed="1" style="width: 400px; height: 400px;" loop autoplay></dotlottie-player>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about" id="About">
+        <h2 class="orange">About Us</h2>
+        <p>At Math Champs, we believe in unlocking the potential within every student. Our tailored one-on-one tutoring sessions provide the support, guidance, and expertise needed to excel academically and personally. Whether your child needs help with daily homework, exam preparation, or mastering a challenging subject, our professional tutors are here to help.</p>
+        <div class="about-boxes">
+            <div class="about-box trial-box">
+                <div class="about-box-content">
+                    <h3 class="box-h3">Take Trial Class</h3>
+                    <button class="btn book-btn"><a href="#Contact" class="Contact-link">Book Class</a></button>
+                </div>
+            </div>
+            <div class="about-box premium-box">
+                <div class="about-box-content">
+                    <h3 class="box-h3">Access Premium Class</h3>
+                    <button class="btn premium-btn">Access Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="Features">
+        <h2 class="orange">Features</h2>
+        <p>Have a look at our trial class</p>
+        <iframe width="420" height="315"
+    src="https://www.youtube.com/embed/tgbNymZ7vqY">
+    </iframe>
+    </section>
+
+    <div class="contact-form-container" id="Contact">
+        <h2 class="orange">Contact Us</h2>
+        <form class="contact-form" id="#form" action="https://www.freecodecamp.com/email-submit" method="POST">
+            <div class="contact-box">
+                <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+            <dotlottie-player src="https://lottie.host/7954827f-1c19-46a8-8406-86807953b043/CJg442feXQ.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+                <div class="contact-info">
+                    <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="query">Your Query/Booking Details</label>
+                <textarea id="query" name="query" rows="4" required></textarea>
+
+                <button type="submit" class="submit" id="submit">Submit</button>
+                </div>
+            </div>
+            
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo-title">
+                <img src="./Assets/LogoLight.png" alt="Math Champs Logo" class="logo">
+                <div class="title">
+                    <div class="vertical-line"></div>
+                    <h3>Math Champs</h3>
+                </div>
+            </div>
+            <p>Made with Love by Janvi❤️</p>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Math Champs. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
